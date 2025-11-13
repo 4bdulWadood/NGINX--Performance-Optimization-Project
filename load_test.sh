@@ -22,7 +22,7 @@ echo "  Using $CONCURRENCY concurrent requesters each"
 # Run each test in the background
 hey -z 30s -c "$CONCURRENCY" "$BASE_URL/" &
 hey -z 30s -c "$CONCURRENCY" "$BASE_URL/orders" &
-hey -z 30s -c "1" "$BASE_URL/catalogue" &
+hey -z 30s -c "$CONCURRENCY" "$BASE_URL/catalogue" &
 
 # Wait for all background processes to finish
 wait
