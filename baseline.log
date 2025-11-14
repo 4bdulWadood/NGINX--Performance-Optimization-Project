@@ -1,0 +1,144 @@
+Starting load test with:
+  / endpoint      ->  requests
+  /orders endpoint ->  requests
+  /catalogue endpoint ->  requests
+  Using 50 concurrent requesters each
+/ endpoint
+/orders endpoint
+/catalogue endpoint
+
+Summary:
+  Total:	60.1279 secs
+  Slowest:	0.6895 secs
+  Fastest:	0.0016 secs
+  Average:	0.1345 secs
+  Requests/sec:	371.1918
+  
+  Total data:	193907472 bytes
+  Size/request:	8688 bytes
+
+Response time histogram:
+  0.002 [1]	|
+  0.070 [6166]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.139 [7537]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.208 [4214]	|■■■■■■■■■■■■■■■■■■■■■■
+  0.277 [2332]	|■■■■■■■■■■■■
+  0.346 [1239]	|■■■■■■■
+  0.414 [521]	|■■■
+  0.483 [208]	|■
+  0.552 [73]	|
+  0.621 [27]	|
+  0.690 [1]	|
+
+
+Latency distribution:
+  10% in 0.0271 secs
+  25% in 0.0643 secs
+  50% in 0.1108 secs
+  75% in 0.1890 secs
+  90% in 0.2717 secs
+  95% in 0.3183 secs
+  99% in 0.4330 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0002 secs, 0.0016 secs, 0.6895 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0000 secs, 0.0000 secs, 0.0015 secs
+  resp wait:	0.0933 secs, 0.0006 secs, 0.5149 secs
+  resp read:	0.0037 secs, 0.0000 secs, 0.2075 secs
+
+Status code distribution:
+  [200]	22319 responses
+
+
+
+
+Summary:
+  Total:	60.1727 secs
+  Slowest:	8.4364 secs
+  Fastest:	0.0024 secs
+  Average:	0.6367 secs
+  Requests/sec:	78.4243
+  
+
+Response time histogram:
+  0.002 [1]	|
+  0.846 [3668]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.689 [668]	|■■■■■■■
+  2.533 [217]	|■■
+  3.376 [68]	|■
+  4.219 [45]	|
+  5.063 [25]	|
+  5.906 [11]	|
+  6.750 [6]	|
+  7.593 [4]	|
+  8.436 [6]	|
+
+
+Latency distribution:
+  10% in 0.0563 secs
+  25% in 0.1468 secs
+  50% in 0.3651 secs
+  75% in 0.7765 secs
+  90% in 1.4960 secs
+  95% in 2.1777 secs
+  99% in 4.4043 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0015 secs, 0.0024 secs, 8.4364 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0001 secs, 0.0000 secs, 0.1106 secs
+  resp wait:	0.6308 secs, 0.0022 secs, 8.3390 secs
+  resp read:	0.0040 secs, 0.0000 secs, 0.8092 secs
+
+Status code distribution:
+  [200]	4719 responses
+
+
+
+
+Summary:
+  Total:	60.3688 secs
+  Slowest:	19.7305 secs
+  Fastest:	0.0011 secs
+  Average:	1.1942 secs
+  Requests/sec:	41.2962
+  
+
+Response time histogram:
+  0.001 [1]	|
+  1.974 [2115]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.947 [226]	|■■■■
+  5.920 [41]	|■
+  7.893 [37]	|■
+  9.866 [22]	|
+  11.839 [18]	|
+  13.812 [19]	|
+  15.785 [6]	|
+  17.758 [2]	|
+  19.731 [4]	|
+
+
+Latency distribution:
+  10% in 0.0135 secs
+  25% in 0.1041 secs
+  50% in 0.4970 secs
+  75% in 1.2856 secs
+  90% in 2.6881 secs
+  95% in 4.9143 secs
+  99% in 12.4035 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0007 secs, 0.0011 secs, 19.7305 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0000 secs, 0.0000 secs, 0.0072 secs
+  resp wait:	1.1837 secs, 0.0008 secs, 19.7268 secs
+  resp read:	0.0002 secs, 0.0000 secs, 0.0254 secs
+
+Status code distribution:
+  [200]	2491 responses
+
+Error distribution:
+  [2]	Get https://192.168.58.2:31184/catalogue: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+
+✅ Load test complete.
